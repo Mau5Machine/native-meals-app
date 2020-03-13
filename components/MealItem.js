@@ -27,7 +27,7 @@ const MealItem = props => {
           <View style={{ ...styles.mealRow, ...styles.mealDetails }}>
             <Text>{props.duration}m</Text>
             <Text>{props.complexity.toUpperCase()}</Text>
-            <Text>{props.affordability}</Text>
+            <Text>{props.affordability.toUpperCase()}</Text>
           </View>
         </View>
       </TouchableOpacity>
@@ -44,7 +44,8 @@ const styles = StyleSheet.create({
     width: "100%",
     backgroundColor: "#f5f5f5",
     borderRadius: 10,
-    overflow: "hidden"
+    overflow: "hidden",
+    marginVertical: 10
   },
   mealHeader: {
     height: "85%"
